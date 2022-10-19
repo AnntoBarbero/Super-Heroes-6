@@ -1,0 +1,136 @@
+<!--Establece el tipo estandar del documento (HTML5)-->
+<!DOCTYPE html>
+
+<!--Inicio del documento HTML-->
+<html lang="es">
+
+<!--Datos que le pasamos al navegador con informacion de nuestra pagina -->
+
+<head>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Tarjetas de SúperHéroes</title>
+</head>
+
+<!--Representa todo el contenido de nuestra pagina web-->
+
+<body>
+
+    <!--Cabecera del documento, o alguna seccion del contenido -->
+    <header>
+        <div class="descuentos">20% de descuento en todos los productos!</div>
+        <div class="Logo">
+            <img src="./img/Logo.png" alt="">
+            <!--Titulo del trabajo-->
+            <h1>Nombre Tienda</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="">Contacto</a></li>
+                <li><a href="">Registrarme</a></li>
+                <li><a href="">Ingresar</a></li>
+            </ul>
+        </nav>
+        <article class="Boton">
+            <div class="Boton_Registro"><a href="./index.html">+</a></div>
+        </article>
+    </header>
+
+    <!--Sección de contenidos-->
+    <section class="Formulario">
+        <h2>Añadí tu super!</h2>
+        <p>Agregá tu personaje favorito completando las opciones.</p>
+
+        <!--Creo la fila-->
+        <div class="Fila">
+            <div class="Columna">
+                <!--Nombre-->
+                <label for="nombre">* Nombre</label>
+                <input type="text" id="Nombre" name="Nombre" required>
+                <!--Fecha-->
+                <label for="fecha">Fecha</label>
+                <input type="date" id="Datos" name="Datos">
+                <!--Descripción-->
+                <textarea name="textarea" placeholder="Descripción"></textarea>
+            </div>
+
+            <!--Parte de la columna derecha-->
+            <div class="Columna">
+                <!--Selección de especie-->
+                <label for="especie">* Especie</label>
+                <select name="especie" id="especie" required>
+                    <!--Opciones para seleccionar un tipo de especie-->
+                    <option value="" selected disabled hidden>Especie</option>
+                    <option value="1">Humano</option>
+                    <option value="2">Semi-Dios</option>
+                    <option value="3">Reptil</option>
+                </select>
+
+                <!--Parte de agregar la foto-->
+                <label for="title">Agregar Foto</label>
+                <input type="file" id="file">
+
+                <!--Poderes-->
+                <label for="power"> Poderes
+                    <!--Tipo de poder-->
+                    <div class="item">
+                        <input type="checkbox" id="power" name="power" value="Fly">
+                        <!--Volar-->
+                        <label for="power">Volar</label>
+                    </div>
+                    <!--Tipo de poder-->
+                    <div class="item">
+                        <input type="checkbox" id="power" name="power" value="Intelligent">
+                        <!--Inteligencia-->
+                        <label for="power">SuperInteligencia</label>
+                    </div>
+                    <!--Tipo de poder-->
+                    <div class="item">
+                        <input type="checkbox" id="power" name="power" value="Laser">
+                        <!--Rayo Láser-->
+                        <label for="power">Vista de rayo láser</label>
+                    </div>
+                    <!--Tipo de poder-->
+                    <div class="item">
+                        <input type="checkbox" id="power" name="power" value="Money">
+                        <!--Billetera gorda-->
+                        <label for="power">Billetera gorda</label>
+                    </div>
+                </label>
+
+                <!--Hago una línea-->
+                <hr>
+                <!--Tipos de personajes-->
+                <label for="hero-type"> Tipo de personaje
+                    <div class="item">
+                        <input type="radio" name="hero-type" id="hero-type" value="Hero">
+                        <!--Primer tipo-->
+                        <label for="hero-type">Héroe/Heroina</label>
+
+                        <div class="item">
+                            <input type="radio" name="hero-type" id="hero-type" value="Villan">
+                            <!--Segundo tipo-->
+                            <label for="hero-type">Villano/Villana</label>
+                        </div>
+
+
+                </label>
+
+            </div>
+        </div>
+
+        </div>
+
+
+        <!--Hacer botón de añadir-->
+        <button>Añadir</button>
+        </form>
+    </section>
+    </section>
+
+    <!--Pie de página-->
+    <footer>
+        <p>Todos los derechos reservados a TDW</p>
+    </footer>
+</body>
+
+</html>

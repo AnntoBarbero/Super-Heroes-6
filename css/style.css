@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.descuentos {
+  background: #1CD1B0;
+  padding: 10px;
+  font-size: 15px;
+}
+
+section {
+  margin-block: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*Le saco los puntos a la lista */
+ul {
+  list-style: none;
+}
+
+/*Le pongo color a contacto, registrarme ingresar. Dejo el texto sin nada*/
+a {
+  display: inline-block;
+  color: #F3F3F3;
+  text-decoration: none;
+}
+
+ul a:hover {
+  background-color: #539cc4;
+}
+
+header .Logo {
+  background: #00669F;
+  display: flex;
+  padding: 2px 16px;
+  align-items: center;
+}
+
+header nav {
+  background: #001d2d;
+  color: #F3F3F3;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: end;
+}
+
+header nav a {
+  padding: 11px;
+}
+
+header h1 {
+  color: #F3F3F3;
+  font-weight: 400;
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+article.card {
+  width: 300px;
+}
+
+img.img-like {
+  position: absolute;
+  top: 15px;
+  left: 21px;
+}
+
+img.img-perfil {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.card-header {
+  position: relative;
+}
+
+.card-body {
+  text-align: center;
+  padding: 18px;
+  background: #F3F3F3;
+}
+
+.card-body h2 {
+  margin-top: 60px;
+  font-size: 30px;
+}
+
+.card-body p {
+  text-align: left;
+}
+
+.card-body a {
+  display: inline-block;
+  padding: 15px 38px;
+  background: #00669F;
+  color: white;
+  text-decoration: none;
+}
+
+.cards {
+  margin: 150px 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.cards .Boton_Registro:hover {
+  background-color: #001d2d;
+}
+
+.Boton .Boton_Registro {
+  background-color: #001d2d;
+  position: fixed;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 62px;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: 0.5s;
+}
+
+.Boton .Boton_Registro:hover {
+  background-color: #00669F;
+}
+
+.cards .Boton_Registro {
+  background: #00669F;
+  position: fixed;
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 62px;
+  top: 50%;
+  right: 16px;
+  transform: translate(0, -50%);
+  transition: 0.5s;
+}
+
+footer {
+  background: #00669F;
+  color: #FFF9F9;
+  display: flex;
+  align-items: center;
+  padding: 16px 30px;
+}
+
+footer p {
+  text-align: center;
+  padding: 0 10px;
+  flex: 1;
+}
+
+
+/*Código del formulario*/
+.Formulario {
+  display: flex;
+  justify-content: center;
+  margin: 40px 200px;
+  background: #00669F;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50px;
+  color: #F3F3F3;
+  font-size: 20px;
+  padding: 18px 20px;
+}
+
+.Fila {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+
+.Formulario h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.Formulario .Columna {
+  display: flex;
+  flex-direction: column;
+
+}
+
+/*Acomodo los input de nombre y fecha*/
+.Formulario .Columna>input {
+  height: 63px;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.Formulario label {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/*Acomodo la parte de seleccionar especies*/
+.Formulario select {
+  height: 63px;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*Acomodo el cuadro de descripción*/
+.Formulario textarea {
+  resize: none;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 30px;
+  height: 350px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.Formulario .item {
+  display: flex;
+  align-items: center;
+  margin: 13px 0;
+  gap: 10px;
+}
+
+.Formulario .item label {
+  margin: 0;
+  margin-left: 7px;
+}
+
+/*Para hacer el botón de añadir*/
+.Formulario button {
+  width: 100%;
+  border-radius: 23px;
+  border: none;
+  background: #1CD1B0;
+  height: 87px;
+  cursor: pointer;
+  font-size: 40px;
+  font-weight: 700;
+  transition: 0.5s;
+  margin: 20px 0 18px 0;
+  max-width: 466px;
+}
+
+
+@media (max-width: 860px) {
+  .row {
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+@media (max-width: 680px) {
+  footer {
+    flex-direction: column;
+  }
+}
